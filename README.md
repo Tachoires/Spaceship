@@ -17,3 +17,4 @@ IA steps :
 3) L'IA est élaborée ( fonctions d'évaluation et d'arborescence implémentées) : Encore en cours (on le fait en meme temps que le 2)
 4) L'IA est terminée (fonction d'évaluation du joueur...) : En attente
 
+PS : j'ai aussi rajouté la première version d'IA (IA step 1)) dans un .txt, UNIQUEMENT a titre documentatif.
