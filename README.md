@@ -1,9 +1,13 @@
 # Spaceship
 Projet L3 EFREI
 
+Organisation : 2 versions :
+-Jeu 1V1 entièrement fonctionnel
+-Jeu vs IA encore en cours
+
 actuellement implémenté :
 
-Jeu : 99,9% fini, version 1V1 valide (zip correspondant dans le gros zip)
+Jeu : 99,9% fini, version 1V1 valide
 IA : 25% fini
 Interface graphique : en attente (on a commencé)
 
