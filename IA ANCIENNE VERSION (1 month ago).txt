@@ -1,0 +1,95 @@
+package spaceship;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class IA {
+
+	// d pour vous dÃ©placer Ã  droite
+	// q pour vous dÃ©placer Ã  gauche
+	// z pour vous dÃ©placer en haut
+	// s pour vous dÃ©placer en bas
+	//
+	// 1 pour missile d'une case par tour
+	// 2 pour missile de deux cases par tour
+	// p pour passer son tour
+
+	private int plateau[][]; // RACINE DE L'ARBRE
+	private char[] coupIA = new char[3]; // COUP DE L'IA : SERA ISSU D'UNE FCT
+	// ATTENTION : RETOURNER COUP DEPLACEMENT ET COUP TIR, CONSTITUENT A EUX 2 LE
+	// COUP IA
+	// 3EME CASE TABLEAU = VALEUR DE L'ACTION
+	private List arbre;
+	public static final int joueur = 2;
+
+	public IA(int[][] plateau) {
+		this.plateau = plateau; // PLACEMENT RACINE
+	}
+
+	@Override
+	public String toString() {
+		return "Tamer";
+	}
+
+	public int[][] getPlateau() {
+		return plateau;
+	}
+
+	public void setPlateau(int[][] plateau) {
+		this.plateau = plateau;
+	}
+	// TEST DE COUP UNIQUE
+	 public char[] coupJoue(int[][] plateau) {
+	 setPlateau(plateau);
+	 coupIA[0] = 'q';
+	 coupIA[1] = '1';
+	 return coupIA;
+	 }
+
+	public String[] minMax(int[][] plateau, char[] coupIA) {
+		int max = -10000;
+		int tmp, maxi, maxj = 0;
+
+		char[] déplacementsPossibles = new char[4];// TOUS LES DEPLACEMENTS POSSIBLES
+
+		déplacementsPossibles[0] = 'z';
+		déplacementsPossibles[1] = 'q';
+		déplacementsPossibles[2] = 's';
+		déplacementsPossibles[3] = 'd';
+
+		char[] tirsPossibles = new char[3];// TOUS LES TIRS POSSIBLES
+
+		tirsPossibles[0] = '1';
+		tirsPossibles[1] = '2';
+		tirsPossibles[2] = 'p';
+
+		// NB : string = tableau de char
+
+		String arbre[] = new String[23]; // Tableau regroupant TOUS les coups
+		int compteur = 0;
+
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 2; j++) {
+				arbre[compteur] = "" + déplacementsPossibles[i] + tirsPossibles[j];
+				compteur++;
+
+				arbre[compteur] = "" + tirsPossibles[j] + déplacementsPossibles[i];
+				compteur++;
+			}
+		}
+		arbre[16] = "1p";
+		arbre[17] = "2p";
+		arbre[18] = "zp";
+		arbre[19] = "qp";
+		arbre[20] = "sp";
+		arbre[21] = "dp";
+		arbre[22] = "p";
+
+		for (int i = 0; i < 23; i++) {
+			arbre[i] += (0 + (int) (Math.random() * ((3 - 0) + 1)));
+		}
+
+		return arbre;
+	}
+}
