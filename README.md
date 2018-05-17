@@ -18,3 +18,9 @@ IA steps :
 4) L'IA est terminée (fonction d'évaluation du joueur...) : En attente
 
 PS : j'ai aussi rajouté la première version d'IA (IA step 1)) dans un .txt, UNIQUEMENT a titre documentatif.
+
+EDIT du 17/05 : 
+IA terminée a 50%.
+Jeu a débugger (léger)
+Précision : élagage alpha-beta = step 3) de l'IA
+
