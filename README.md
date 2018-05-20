@@ -24,3 +24,10 @@ IA terminée a 50%.
 Jeu a débugger (léger)
 Précision : élagage alpha-beta = step 3) de l'IA
 
+EDIT du 20/05 :
+
+NORMALEMENT le rendu est dans L'AUTRE REPOSITORY (le vrai repository du projet, appellé projet-L3, mais on l'a aussi mis ici au cas ou)
+
+Pour voir les consignes, cf l'autre repository.
+
+On rappelle que la version graphique arrive.
