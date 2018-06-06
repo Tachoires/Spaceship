@@ -31,3 +31,7 @@ NORMALEMENT le rendu est dans L'AUTRE REPOSITORY (le vrai repository du projet, 
 Pour voir les consignes, cf l'autre repository.
 
 On rappelle que la version graphique arrive.
+
+EDIT FINAL : 
+
+Puisuqe on a eu 0 au github, pour que cela soit bien clair pour le correcteur : je remet AU PROPRE la version FINALE ET DEFINITIVE dans PROJET FATALERROR FINAL. c'est EXACTEMENT le code que nous avons présenté lors de la soutenance.
